@@ -9,6 +9,12 @@ STOP_WORDS = set(stopwords.words("english"))
 PUNCT_TABLE = str.maketrans("", "", string.punctuation)
 DIGIT_TABLE = str.maketrans("", "", string.digits)
 
+def normalize_text(text):
+    text = text.lower()
+    text = text.translate(PUNCT_TABLE)
+    text = text.translate(DIGIT_TABLE)
+    
+    return text.strip()
 
 def normalize(filepath):
 

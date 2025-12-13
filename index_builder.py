@@ -20,7 +20,7 @@ def build_index(directory_path):
             freq = Counter(tokens)
 
             for term, count in freq.items():
-                inverted_index[term][doc_id]= count
+                inverted_index[term][doc_id] = count
 
             doc_id += 1
 
