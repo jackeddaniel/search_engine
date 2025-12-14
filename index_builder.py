@@ -5,6 +5,7 @@ from parse_help import normalize, tokenize
 
 def build_index(directory_path):
     inverted_index = defaultdict(dict)
+    doc_len_dict = defaultdict(int)
     dir_path = Path(directory_path)
 
     print("starting processing")
@@ -17,6 +18,8 @@ def build_index(directory_path):
             text = normalize(entry)
             tokens = tokenize(text)
 
+            doc_len_dict[doc_id] = len(tokens)
+
             freq = Counter(tokens)
 
             for term, count in freq.items():
@@ -24,7 +27,7 @@ def build_index(directory_path):
 
             doc_id += 1
 
-    return dict(inverted_index)
+    return dict(inverted_index), dict(doc_len_dict)
 
 
 
