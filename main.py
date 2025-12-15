@@ -47,6 +47,27 @@ def score_docs(inverted_index, doc_len_dict, cand_dict, tokens):
 
     return dict(score)
 
+def print_top_docs(sorted_score, docs_dir, top_k=5, preview_len=300):
+    print("\n===== TOP SEARCH RESULTS =====\n")
+
+    for rank, (doc_id, score) in enumerate(sorted_score[:top_k], start=1):
+        doc_path = docs_dir / f"{doc_id}.txt"
+
+        print(f"Rank {rank}")
+        print(f"Doc ID: {doc_id}")
+        print(f"Score: {score:.4f}")
+        print(f"File: {doc_path.name}")
+
+        try:
+            with open(doc_path, "r", encoding="utf-8") as f:
+                content = f.read(preview_len)
+
+            print("\nPreview:")
+            print(content.replace("\n", " ")[:preview_len])
+        except Exception as e:
+            print(f"Could not read document: {e}")
+
+        print("\n" + "-" * 70 + "\n")
 
 
 def main():
@@ -67,7 +88,9 @@ def main():
         print(f"{key} : {val}")
         count += 1
 
-    query = "computer science"
+    query = "dogs"
+
+    
 
     query_text = normalize_text(query)
     query_tokens = tokenize(query_text)
@@ -77,9 +100,12 @@ def main():
     
     sorted_score = sorted(score.items(), key= lambda item: item[1], reverse=True)
     #print(candidate_docs)
-    print(sorted_score[:10])
+    print(sorted_score[:5])
+    
+    print_top_docs(sorted_score, path,5, 1000000)
 
     print(f"candidate docs num {len(candidate_docs)} and score size is {len(score)}")
+    print(f"number of docs which contain the word {query} is {inverted_index[query]}")
 
 
 

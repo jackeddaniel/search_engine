@@ -9,11 +9,12 @@ def build_index(directory_path):
     dir_path = Path(directory_path)
 
     print("starting processing")
-    doc_id = 0
 
     for entry in dir_path.iterdir():
         if entry.is_file():
             print(entry)
+            doc_id = int(entry.stem)
+            print(f"processing doc_id= {doc_id}")
 
             text = normalize(entry)
             tokens = tokenize(text)
@@ -24,8 +25,8 @@ def build_index(directory_path):
 
             for term, count in freq.items():
                 inverted_index[term][doc_id] = count
+    print("indexing complete")
 
-            doc_id += 1
 
     return dict(inverted_index), dict(doc_len_dict)
 
