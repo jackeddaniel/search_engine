@@ -16,6 +16,7 @@ def get_candidate_docs_dict(inverted_index, tokens):
 
     for token in tokens:
         if token not in inverted_index:
+            print(f"Token {token} not found ")
             continue
         print(f"token being looked up {token}")
         for doc_id, freq in inverted_index[token].items():
@@ -28,7 +29,7 @@ def get_candidate_docs_dict(inverted_index, tokens):
     return docs
 
 def score_docs(inverted_index, doc_len_dict, cand_dict, tokens):
-    n = 19000
+    n = len(doc_len_dict)
 
     score = defaultdict(float)
     
@@ -46,6 +47,28 @@ def score_docs(inverted_index, doc_len_dict, cand_dict, tokens):
             score[doc_id] += (term_freq/doc_len)*idf  
 
     return dict(score)
+
+def score_docs_bm25(inverted_index, doc_len_dict, cand_dict, tokens, avgdl):
+    n = len(doc_len_dict)
+    score = defaultdict(float)
+    k1 = 1.5
+    b = 0.75
+
+    for doc_id in cand_dict:
+        score[doc_id] = 0.0
+
+        for token in cand_dict[doc_id]:
+            term_freq = cand_dict[doc_id][token]
+            doc_freq = len(inverted_index[token])
+            doc_len = doc_len_dict[doc_id]
+
+            ratio = (n - doc_freq + 0.5) / (doc_freq + 0.5)
+            idf = math.log(ratio)
+
+            score[doc_id] += idf * (term_freq * (k1+1)) / (term_freq + k1 * (1 - b + b*(doc_len/ avgdl)))
+
+    return dict(score)
+
 
 def print_top_docs(sorted_score, docs_dir, top_k=5, preview_len=300):
     print("\n===== TOP SEARCH RESULTS =====\n")
@@ -75,7 +98,7 @@ def main():
 
     path = Path(DIR_NAME)
 
-    inverted_index, doc_len_dict = build_index(path)
+    inverted_index, doc_len_dict, avgdl = build_index(path)
 
     print(len(inverted_index))
 
@@ -88,7 +111,7 @@ def main():
         print(f"{key} : {val}")
         count += 1
 
-    query = "dogs"
+    query = "computer science"
 
     
 
@@ -96,16 +119,15 @@ def main():
     query_tokens = tokenize(query_text)
 
     candidate_docs = get_candidate_docs_dict(inverted_index, query_tokens)
-    score = score_docs(inverted_index, doc_len_dict, candidate_docs, query_tokens)
+    score = score_docs_bm25(inverted_index, doc_len_dict, candidate_docs, query_tokens, avgdl)
+    #score = score_docs(inverted_index, doc_len_dict, candidate_docs, query_tokens)
     
     sorted_score = sorted(score.items(), key= lambda item: item[1], reverse=True)
     #print(candidate_docs)
     print(sorted_score[:5])
     
-    print_top_docs(sorted_score, path,5, 1000000)
+    print_top_docs(sorted_score, path,5, 10000)
 
-    print(f"candidate docs num {len(candidate_docs)} and score size is {len(score)}")
-    print(f"number of docs which contain the word {query} is {inverted_index[query]}")
 
 
 
