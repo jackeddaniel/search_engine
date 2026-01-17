@@ -4,3 +4,8 @@
 /venv/
 /docs/
 /.venv/
+datasets
+__pycache__/
+crawler/__pycache__/
+venv/
+docs/
