@@ -1,10 +1,14 @@
 import string
 import os
-from pathlib import Path  
 import nltk
+
+nltk.download('stopwords')
+nltk.download('punkt')
+from pathlib import Path  
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 
+STOP_WORDS = set(stopwords.words("english"))
 STOP_WORDS = set(stopwords.words("english"))
 PUNCT_TABLE = str.maketrans("", "", string.punctuation)
 DIGIT_TABLE = str.maketrans("", "", string.digits)
@@ -48,7 +52,7 @@ def tokenize(text):
 
 
 def main():
-    dir_name = Path("datasets/docs")
+    dir_name = Path("/docs")
     
     if not dir_name.is_dir():
         print(f"Error: Directory '{dir_name}' not found. Please create it or check the path.")

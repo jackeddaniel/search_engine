@@ -1,3 +1,5 @@
+import logging
+
 from pathlib import Path
 from collections import defaultdict, Counter
 from parse_help import normalize, tokenize
@@ -8,15 +10,15 @@ def build_index(directory_path):
     doc_len_dict = defaultdict(int)
     dir_path = Path(directory_path)
 
-    print("starting processing")
+    logging.info("starting processing")
     doc_num = 0
     total_doc_len = 0
 
     for entry in dir_path.iterdir():
         if entry.is_file():
-            print(entry)
+            logging.debug(f"Entry: {entry}")
             doc_id = int(entry.stem)
-            print(f"processing doc_id= {doc_id}")
+            logging.debug(f"processing doc_id= {doc_id}")
 
             text = normalize(entry)
             tokens = tokenize(text)
@@ -29,7 +31,8 @@ def build_index(directory_path):
 
             for term, count in freq.items():
                 inverted_index[term][doc_id] = count
-    print("indexing complete")
+    logging.info("indexing complete")
+    print(inverted_index)
 
     avgdl = total_doc_len/doc_num
 

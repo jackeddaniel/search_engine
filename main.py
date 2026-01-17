@@ -1,26 +1,28 @@
+import math
+import logging
+
 from pathlib import Path
 from collections import defaultdict
 from index_builder import build_index
 from parse_help import normalize_text, tokenize
-import math
 
 def get_candidate_docs_dict(inverted_index, tokens):
     if not inverted_index:
-        print("No inverted index")
+        logging.error("No inverted index")
         return None
     if not tokens:
-        print("No token list")
+        logging.error("No token list")
         return None
 
     docs = {}
 
     for token in tokens:
         if token not in inverted_index:
-            print(f"Token {token} not found ")
+            logging.warning(f"Token {token} not found ")
             continue
-        print(f"token being looked up {token}")
+        logging.debug(f"token being looked up {token}")
         for doc_id, freq in inverted_index[token].items():
-            print(f"Document id is {doc_id} and frequence is {freq}")
+            logging.debug(f"Document id is {doc_id} and frequence is {freq}")
             if doc_id not in docs:
                 docs[doc_id] = {token: freq}
             
@@ -94,13 +96,13 @@ def print_top_docs(sorted_score, docs_dir, top_k=5, preview_len=300):
 
 
 def main():
-    DIR_NAME = "datasets/docs"
+    DIR_NAME = "./docs"
 
     path = Path(DIR_NAME)
 
     inverted_index, doc_len_dict, avgdl = build_index(path)
 
-    print(len(inverted_index))
+    logging.debug(f"Len of inverted index {len(inverted_index)}")
 
     count = 0
 
@@ -108,7 +110,7 @@ def main():
         if count >= 5:
             break
 
-        print(f"{key} : {val}")
+        logging.debug(f"{key} : {val}")
         count += 1
 
     query = "computer science"
@@ -124,7 +126,7 @@ def main():
     
     sorted_score = sorted(score.items(), key= lambda item: item[1], reverse=True)
     #print(candidate_docs)
-    print(sorted_score[:5])
+    logging.debug(f"Sorted score {sorted_score[:5]}")
     
     print_top_docs(sorted_score, path,5, 10000)
 
