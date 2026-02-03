@@ -1,0 +1,458 @@
+2026-02-03 20:32:15,584 - INFO - Successfully loaded 27 seed URLs from /home/siddhant/projects/search_engine/crawler/seed/urls.txt
+2026-02-03 20:32:15,584 - INFO - ============================================================
+2026-02-03 20:32:15,584 - INFO - Starting BFS Web Crawl
+2026-02-03 20:32:15,584 - INFO - ============================================================
+2026-02-03 20:32:15,584 - INFO - Max URLs: 100
+2026-02-03 20:32:15,584 - INFO - Max depth: 2
+2026-02-03 20:32:15,584 - INFO - Delay per domain: 1.0s
+2026-02-03 20:32:15,584 - INFO - Same domain only: False
+2026-02-03 20:32:15,584 - INFO - Respect robots.txt: True
+2026-02-03 20:32:15,584 - INFO - User agent: SearchEngineBot/1.0 (+http://yoursite.com/bot)
+2026-02-03 20:32:15,585 - INFO - ============================================================
+2026-02-03 20:32:15,585 - INFO - [1/100] Depth 0: https://news.ycombinator.com/
+2026-02-03 20:32:15,585 - INFO - Fetching robots.txt for https://news.ycombinator.com
+2026-02-03 20:32:17,193 - INFO - Successfully loaded robots.txt for https://news.ycombinator.com
+2026-02-03 20:32:18,629 - INFO - ✓ Downloaded: https://news.ycombinator.com/ -> docs/0.html (34349 bytes)
+2026-02-03 20:32:18,652 - INFO - [2/100] Depth 0: https://www.bbc.com/news
+2026-02-03 20:32:18,652 - INFO - Fetching robots.txt for https://www.bbc.com
+2026-02-03 20:32:19,036 - INFO - Successfully loaded robots.txt for https://www.bbc.com
+2026-02-03 20:32:19,392 - INFO - ✓ Downloaded: https://www.bbc.com/news -> docs/1.html (330182 bytes)
+2026-02-03 20:32:19,420 - INFO - [3/100] Depth 0: https://www.reuters.com/
+2026-02-03 20:32:19,420 - INFO - Fetching robots.txt for https://www.reuters.com
+2026-02-03 20:32:19,651 - INFO - Successfully loaded robots.txt for https://www.reuters.com
+2026-02-03 20:32:20,056 - WARNING - Error downloading https://www.reuters.com/: 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/
+2026-02-03 20:32:20,058 - INFO - [3/100] Depth 0: https://www.theguardian.com/
+2026-02-03 20:32:20,059 - INFO - Fetching robots.txt for https://www.theguardian.com
+2026-02-03 20:32:20,368 - INFO - Successfully loaded robots.txt for https://www.theguardian.com
+2026-02-03 20:32:20,550 - INFO - ✓ Downloaded: https://www.theguardian.com/ -> docs/2.html (1349899 bytes)
+2026-02-03 20:32:20,642 - INFO - [4/100] Depth 0: https://stackoverflow.com/
+2026-02-03 20:32:20,642 - INFO - Fetching robots.txt for https://stackoverflow.com
+2026-02-03 20:32:26,745 - INFO - Successfully loaded robots.txt for https://stackoverflow.com
+2026-02-03 20:32:33,797 - INFO - ✓ Downloaded: https://stackoverflow.com/ -> docs/3.html (233175 bytes)
+2026-02-03 20:32:33,840 - INFO - [5/100] Depth 0: https://github.com/trending
+2026-02-03 20:32:33,840 - INFO - Fetching robots.txt for https://github.com
+2026-02-03 20:32:34,397 - INFO - Successfully loaded robots.txt for https://github.com
+2026-02-03 20:32:35,837 - INFO - ✓ Downloaded: https://github.com/trending -> docs/4.html (567465 bytes)
+2026-02-03 20:32:35,932 - INFO - [6/100] Depth 0: https://dev.to/
+2026-02-03 20:32:35,932 - INFO - Fetching robots.txt for https://dev.to
+2026-02-03 20:32:36,007 - INFO - Successfully loaded robots.txt for https://dev.to
+2026-02-03 20:32:36,007 - INFO - Blocked by robots.txt: https://dev.to/
+2026-02-03 20:32:36,007 - INFO - Blocked by robots.txt: https://dev.to/
+2026-02-03 20:32:36,008 - INFO - [6/100] Depth 0: https://medium.com/
+2026-02-03 20:32:36,008 - INFO - Fetching robots.txt for https://medium.com
+2026-02-03 20:32:36,056 - INFO - Successfully loaded robots.txt for https://medium.com
+2026-02-03 20:32:36,057 - INFO - Blocked by robots.txt: https://medium.com/
+2026-02-03 20:32:36,057 - INFO - Blocked by robots.txt: https://medium.com/
+2026-02-03 20:32:36,057 - INFO - [6/100] Depth 0: https://blog.google/
+2026-02-03 20:32:36,057 - INFO - Fetching robots.txt for https://blog.google
+2026-02-03 20:32:36,546 - INFO - Successfully loaded robots.txt for https://blog.google
+2026-02-03 20:32:37,193 - INFO - ✓ Downloaded: https://blog.google/ -> docs/5.html (323044 bytes)
+2026-02-03 20:32:37,225 - INFO - [7/100] Depth 0: https://engineering.fb.com/
+2026-02-03 20:32:37,225 - INFO - Fetching robots.txt for https://engineering.fb.com
+2026-02-03 20:32:37,673 - INFO - Successfully loaded robots.txt for https://engineering.fb.com
+2026-02-03 20:32:37,981 - INFO - ✓ Downloaded: https://engineering.fb.com/ -> docs/6.html (75720 bytes)
+2026-02-03 20:32:38,007 - INFO - [8/100] Depth 0: https://aws.amazon.com/blogs
+2026-02-03 20:32:38,007 - INFO - Fetching robots.txt for https://aws.amazon.com
+2026-02-03 20:32:38,393 - INFO - Successfully loaded robots.txt for https://aws.amazon.com
+2026-02-03 20:32:39,013 - INFO - ✓ Downloaded: https://aws.amazon.com/blogs -> docs/7.html (229807 bytes)
+2026-02-03 20:32:39,033 - INFO - [9/100] Depth 0: https://blog.cloudflare.com/
+2026-02-03 20:32:39,033 - INFO - Fetching robots.txt for https://blog.cloudflare.com
+2026-02-03 20:32:39,118 - INFO - Successfully loaded robots.txt for https://blog.cloudflare.com
+2026-02-03 20:32:39,119 - INFO - Blocked by robots.txt: https://blog.cloudflare.com/
+2026-02-03 20:32:39,119 - INFO - Blocked by robots.txt: https://blog.cloudflare.com/
+2026-02-03 20:32:39,119 - INFO - [9/100] Depth 0: https://www.khanacademy.org/
+2026-02-03 20:32:39,119 - INFO - Fetching robots.txt for https://www.khanacademy.org
+2026-02-03 20:32:39,619 - INFO - Successfully loaded robots.txt for https://www.khanacademy.org
+2026-02-03 20:32:40,201 - INFO - ✓ Downloaded: https://www.khanacademy.org/ -> docs/8.html (164509 bytes)
+2026-02-03 20:32:40,207 - INFO - [10/100] Depth 0: https://ocw.mit.edu/
+2026-02-03 20:32:40,207 - INFO - Fetching robots.txt for https://ocw.mit.edu
+2026-02-03 20:32:40,378 - INFO - Successfully loaded robots.txt for https://ocw.mit.edu
+2026-02-03 20:32:40,481 - INFO - ✓ Downloaded: https://ocw.mit.edu/ -> docs/9.html (672428 bytes)
+2026-02-03 20:32:40,569 - INFO - [11/100] Depth 0: https://www.coursera.org/
+2026-02-03 20:32:40,569 - INFO - Fetching robots.txt for https://www.coursera.org
+2026-02-03 20:32:40,956 - INFO - Successfully loaded robots.txt for https://www.coursera.org
+2026-02-03 20:32:41,482 - INFO - ✓ Downloaded: https://www.coursera.org/ -> docs/10.html (711034 bytes)
+2026-02-03 20:32:41,517 - INFO - [12/100] Depth 0: https://www.edx.org/
+2026-02-03 20:32:41,517 - INFO - Fetching robots.txt for https://www.edx.org
+2026-02-03 20:32:41,664 - INFO - Successfully loaded robots.txt for https://www.edx.org
+2026-02-03 20:32:41,664 - INFO - Blocked by robots.txt: https://www.edx.org/
+2026-02-03 20:32:41,665 - INFO - Blocked by robots.txt: https://www.edx.org/
+2026-02-03 20:32:41,665 - INFO - [12/100] Depth 0: https://developer.mozilla.org/
+2026-02-03 20:32:41,665 - INFO - Fetching robots.txt for https://developer.mozilla.org
+2026-02-03 20:32:41,872 - INFO - Successfully loaded robots.txt for https://developer.mozilla.org
+2026-02-03 20:32:42,406 - INFO - ✓ Downloaded: https://developer.mozilla.org/ -> docs/11.html (111548 bytes)
+2026-02-03 20:32:42,430 - INFO - [13/100] Depth 0: https://docs.python.org/
+2026-02-03 20:32:42,430 - INFO - Fetching robots.txt for https://docs.python.org
+2026-02-03 20:32:42,484 - INFO - Successfully loaded robots.txt for https://docs.python.org
+2026-02-03 20:32:42,897 - INFO - ✓ Downloaded: https://docs.python.org/ -> docs/12.html (17802 bytes)
+2026-02-03 20:32:42,913 - INFO - [14/100] Depth 0: https://docs.docker.com/
+2026-02-03 20:32:42,913 - INFO - Fetching robots.txt for https://docs.docker.com
+2026-02-03 20:32:43,203 - INFO - Successfully loaded robots.txt for https://docs.docker.com
+2026-02-03 20:32:43,407 - INFO - ✓ Downloaded: https://docs.docker.com/ -> docs/13.html (102036 bytes)
+2026-02-03 20:32:43,417 - INFO - [15/100] Depth 0: https://kubernetes.io/docs
+2026-02-03 20:32:43,417 - INFO - Fetching robots.txt for https://kubernetes.io
+2026-02-03 20:32:48,835 - INFO - Successfully loaded robots.txt for https://kubernetes.io
+2026-02-03 20:32:49,257 - INFO - ✓ Downloaded: https://kubernetes.io/docs -> docs/14.html (485683 bytes)
+2026-02-03 20:32:49,355 - INFO - [16/100] Depth 0: https://www.ebay.com/
+2026-02-03 20:32:49,355 - INFO - Fetching robots.txt for https://www.ebay.com
+2026-02-03 20:32:49,864 - INFO - Successfully loaded robots.txt for https://www.ebay.com
+2026-02-03 20:32:50,494 - INFO - ✓ Downloaded: https://www.ebay.com/ -> docs/15.html (677747 bytes)
+2026-02-03 20:32:50,530 - INFO - [17/100] Depth 0: https://www.etsy.com/
+2026-02-03 20:32:50,530 - INFO - Fetching robots.txt for https://www.etsy.com
+2026-02-03 20:32:51,100 - INFO - Successfully loaded robots.txt for https://www.etsy.com
+2026-02-03 20:32:51,294 - WARNING - Error downloading https://www.etsy.com/: 403 Client Error: Forbidden for url: https://www.etsy.com/
+2026-02-03 20:32:51,296 - INFO - [17/100] Depth 0: https://www.usa.gov/
+2026-02-03 20:32:51,296 - INFO - Fetching robots.txt for https://www.usa.gov
+2026-02-03 20:32:52,112 - INFO - Successfully loaded robots.txt for https://www.usa.gov
+2026-02-03 20:32:52,965 - INFO - ✓ Downloaded: https://www.usa.gov/ -> docs/16.html (46798 bytes)
+2026-02-03 20:32:52,991 - INFO - [18/100] Depth 0: https://data.gov/
+2026-02-03 20:32:52,991 - INFO - Fetching robots.txt for https://data.gov
+2026-02-03 20:32:54,479 - INFO - Successfully loaded robots.txt for https://data.gov
+2026-02-03 20:32:55,955 - INFO - ✓ Downloaded: https://data.gov/ -> docs/17.html (121567 bytes)
+2026-02-03 20:32:55,977 - INFO - [19/100] Depth 0: https://www.census.gov/
+2026-02-03 20:32:55,978 - INFO - Fetching robots.txt for https://www.census.gov
+2026-02-03 20:32:57,134 - INFO - Successfully loaded robots.txt for https://www.census.gov
+2026-02-03 20:32:57,135 - INFO - Blocked by robots.txt: https://www.census.gov/
+2026-02-03 20:32:57,135 - INFO - Blocked by robots.txt: https://www.census.gov/
+2026-02-03 20:32:57,135 - INFO - [19/100] Depth 0: https://arxiv.org/
+2026-02-03 20:32:57,135 - INFO - Fetching robots.txt for https://arxiv.org
+2026-02-03 20:32:58,361 - INFO - Successfully loaded robots.txt for https://arxiv.org
+2026-02-03 20:32:58,448 - INFO - ✓ Downloaded: https://arxiv.org/ -> docs/18.html (42684 bytes)
+2026-02-03 20:32:58,469 - INFO - [20/100] Depth 0: https://scholar.google.com/
+2026-02-03 20:32:58,469 - INFO - Fetching robots.txt for https://scholar.google.com
+2026-02-03 20:32:58,701 - INFO - Successfully loaded robots.txt for https://scholar.google.com
+2026-02-03 20:33:00,716 - INFO - ✓ Downloaded: https://scholar.google.com/ -> docs/19.html (130387 bytes)
+2026-02-03 20:33:00,725 - INFO - [21/100] Depth 1: https://news.ycombinator.com
+2026-02-03 20:33:02,354 - INFO - ✓ Downloaded: https://news.ycombinator.com -> docs/20.html (34349 bytes)
+2026-02-03 20:33:02,380 - INFO - [22/100] Depth 1: https://news.ycombinator.com/news
+2026-02-03 20:33:03,891 - INFO - ✓ Downloaded: https://news.ycombinator.com/news -> docs/21.html (34349 bytes)
+2026-02-03 20:33:03,913 - INFO - [23/100] Depth 1: https://news.ycombinator.com/newest
+2026-02-03 20:33:05,222 - INFO - ✓ Downloaded: https://news.ycombinator.com/newest -> docs/22.html (40936 bytes)
+2026-02-03 20:33:05,251 - INFO - [24/100] Depth 1: https://news.ycombinator.com/front
+2026-02-03 20:33:06,656 - INFO - ✓ Downloaded: https://news.ycombinator.com/front -> docs/23.html (33363 bytes)
+2026-02-03 20:33:06,676 - INFO - [25/100] Depth 1: https://news.ycombinator.com/newcomments
+2026-02-03 20:33:08,290 - INFO - ✓ Downloaded: https://news.ycombinator.com/newcomments -> docs/24.html (40607 bytes)
+2026-02-03 20:33:08,312 - INFO - [26/100] Depth 1: https://news.ycombinator.com/ask
+2026-02-03 20:33:09,830 - INFO - ✓ Downloaded: https://news.ycombinator.com/ask -> docs/25.html (28523 bytes)
+2026-02-03 20:33:09,851 - INFO - [27/100] Depth 1: https://news.ycombinator.com/show
+2026-02-03 20:33:11,265 - INFO - ✓ Downloaded: https://news.ycombinator.com/show -> docs/26.html (33458 bytes)
+2026-02-03 20:33:11,297 - INFO - [28/100] Depth 1: https://news.ycombinator.com/jobs
+2026-02-03 20:33:13,208 - INFO - ✓ Downloaded: https://news.ycombinator.com/jobs -> docs/27.html (23093 bytes)
+2026-02-03 20:33:13,220 - INFO - [29/100] Depth 1: https://news.ycombinator.com/submit
+2026-02-03 20:33:14,540 - INFO - ✓ Downloaded: https://news.ycombinator.com/submit -> docs/28.html (1055 bytes)
+2026-02-03 20:33:14,544 - INFO - [30/100] Depth 1: https://news.ycombinator.com/login?goto=news
+2026-02-03 20:33:14,544 - INFO - Blocked by robots.txt: https://news.ycombinator.com/login?goto=news
+2026-02-03 20:33:14,544 - INFO - Blocked by robots.txt: https://news.ycombinator.com/login?goto=news
+2026-02-03 20:33:14,544 - INFO - [30/100] Depth 1: https://news.ycombinator.com/vote?id=46871173&how=up&goto=news
+2026-02-03 20:33:14,544 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46871173&how=up&goto=news
+2026-02-03 20:33:14,545 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46871173&how=up&goto=news
+2026-02-03 20:33:14,545 - INFO - [30/100] Depth 1: https://agentskills.io/home
+2026-02-03 20:33:14,545 - INFO - Fetching robots.txt for https://agentskills.io
+2026-02-03 20:33:14,948 - INFO - Successfully loaded robots.txt for https://agentskills.io
+2026-02-03 20:33:15,262 - INFO - ✓ Downloaded: https://agentskills.io/home -> docs/29.html (193251 bytes)
+2026-02-03 20:33:15,279 - INFO - [31/100] Depth 1: https://news.ycombinator.com/from?site=agentskills.io
+2026-02-03 20:33:17,202 - INFO - ✓ Downloaded: https://news.ycombinator.com/from?site=agentskills.io -> docs/30.html (5709 bytes)
+2026-02-03 20:33:17,210 - INFO - [32/100] Depth 1: https://news.ycombinator.com/user?id=mooreds
+2026-02-03 20:33:18,739 - INFO - ✓ Downloaded: https://news.ycombinator.com/user?id=mooreds -> docs/31.html (2655 bytes)
+2026-02-03 20:33:18,745 - INFO - [33/100] Depth 1: https://news.ycombinator.com/item?id=46871173
+2026-02-03 20:33:20,073 - INFO - ✓ Downloaded: https://news.ycombinator.com/item?id=46871173 -> docs/32.html (61177 bytes)
+2026-02-03 20:33:20,101 - INFO - [34/100] Depth 1: https://news.ycombinator.com/hide?id=46871173&goto=news
+2026-02-03 20:33:20,101 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46871173&goto=news
+2026-02-03 20:33:20,101 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46871173&goto=news
+2026-02-03 20:33:20,101 - INFO - [34/100] Depth 1: https://news.ycombinator.com/vote?id=46868759&how=up&goto=news
+2026-02-03 20:33:20,101 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46868759&how=up&goto=news
+2026-02-03 20:33:20,101 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46868759&how=up&goto=news
+2026-02-03 20:33:20,101 - INFO - [34/100] Depth 1: https://lars.ingebrigtsen.no/2026/02/02/whats-up-with-all-those-equals-signs-anyway
+2026-02-03 20:33:20,101 - INFO - Fetching robots.txt for https://lars.ingebrigtsen.no
+2026-02-03 20:33:22,526 - INFO - Successfully loaded robots.txt for https://lars.ingebrigtsen.no
+2026-02-03 20:33:24,587 - INFO - ✓ Downloaded: https://lars.ingebrigtsen.no/2026/02/02/whats-up-with-all-those-equals-signs-anyway -> docs/33.html (59397 bytes)
+2026-02-03 20:33:24,607 - INFO - [35/100] Depth 1: https://news.ycombinator.com/from?site=ingebrigtsen.no
+2026-02-03 20:33:26,317 - INFO - ✓ Downloaded: https://news.ycombinator.com/from?site=ingebrigtsen.no -> docs/34.html (39560 bytes)
+2026-02-03 20:33:26,344 - INFO - [36/100] Depth 1: https://news.ycombinator.com/user?id=todsacerdoti
+2026-02-03 20:33:27,748 - INFO - ✓ Downloaded: https://news.ycombinator.com/user?id=todsacerdoti -> docs/35.html (2187 bytes)
+2026-02-03 20:33:27,753 - INFO - [37/100] Depth 1: https://news.ycombinator.com/item?id=46868759
+2026-02-03 20:33:29,289 - INFO - ✓ Downloaded: https://news.ycombinator.com/item?id=46868759 -> docs/36.html (145506 bytes)
+2026-02-03 20:33:29,352 - INFO - [38/100] Depth 1: https://news.ycombinator.com/hide?id=46868759&goto=news
+2026-02-03 20:33:29,352 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46868759&goto=news
+2026-02-03 20:33:29,352 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46868759&goto=news
+2026-02-03 20:33:29,352 - INFO - [38/100] Depth 1: https://news.ycombinator.com/vote?id=46871169&how=up&goto=news
+2026-02-03 20:33:29,352 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46871169&how=up&goto=news
+2026-02-03 20:33:29,352 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46871169&how=up&goto=news
+2026-02-03 20:33:29,352 - INFO - [38/100] Depth 1: https://ambertherambler.bearblog.dev/decentralizing-my-smartphone-with-single-purpose-devices
+2026-02-03 20:33:29,353 - INFO - Fetching robots.txt for https://ambertherambler.bearblog.dev
+2026-02-03 20:33:29,568 - INFO - Successfully loaded robots.txt for https://ambertherambler.bearblog.dev
+2026-02-03 20:33:29,568 - INFO - Blocked by robots.txt: https://ambertherambler.bearblog.dev/decentralizing-my-smartphone-with-single-purpose-devices
+2026-02-03 20:33:29,568 - INFO - Blocked by robots.txt: https://ambertherambler.bearblog.dev/decentralizing-my-smartphone-with-single-purpose-devices
+2026-02-03 20:33:29,569 - INFO - [38/100] Depth 1: https://news.ycombinator.com/from?site=ambertherambler.bearblog.dev
+2026-02-03 20:33:31,018 - INFO - ✓ Downloaded: https://news.ycombinator.com/from?site=ambertherambler.bearblog.dev -> docs/37.html (3627 bytes)
+2026-02-03 20:33:31,023 - INFO - [39/100] Depth 1: https://news.ycombinator.com/user?id=speckx
+2026-02-03 20:33:32,255 - INFO - ✓ Downloaded: https://news.ycombinator.com/user?id=speckx -> docs/38.html (2048 bytes)
+2026-02-03 20:33:32,258 - INFO - [40/100] Depth 1: https://news.ycombinator.com/item?id=46871169
+2026-02-03 20:33:33,457 - INFO - ✓ Downloaded: https://news.ycombinator.com/item?id=46871169 -> docs/39.html (48424 bytes)
+2026-02-03 20:33:33,492 - INFO - [41/100] Depth 1: https://news.ycombinator.com/hide?id=46871169&goto=news
+2026-02-03 20:33:33,493 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46871169&goto=news
+2026-02-03 20:33:33,493 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46871169&goto=news
+2026-02-03 20:33:33,493 - INFO - [41/100] Depth 1: https://news.ycombinator.com/vote?id=46866544&how=up&goto=news
+2026-02-03 20:33:33,493 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46866544&how=up&goto=news
+2026-02-03 20:33:33,493 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46866544&how=up&goto=news
+2026-02-03 20:33:33,493 - INFO - [41/100] Depth 1: https://krzysztofjankowski.com/floppinux/floppinux-2025.html
+2026-02-03 20:33:33,493 - INFO - Fetching robots.txt for https://krzysztofjankowski.com
+2026-02-03 20:33:36,173 - INFO - Successfully loaded robots.txt for https://krzysztofjankowski.com
+2026-02-03 20:33:36,966 - INFO - ✓ Downloaded: https://krzysztofjankowski.com/floppinux/floppinux-2025.html -> docs/40.html (32656 bytes)
+2026-02-03 20:33:36,991 - INFO - [42/100] Depth 1: https://news.ycombinator.com/from?site=krzysztofjankowski.com
+2026-02-03 20:33:38,712 - INFO - ✓ Downloaded: https://news.ycombinator.com/from?site=krzysztofjankowski.com -> docs/41.html (4821 bytes)
+2026-02-03 20:33:38,718 - INFO - [43/100] Depth 1: https://news.ycombinator.com/user?id=GalaxySnail
+2026-02-03 20:33:40,036 - INFO - ✓ Downloaded: https://news.ycombinator.com/user?id=GalaxySnail -> docs/42.html (2095 bytes)
+2026-02-03 20:33:40,038 - INFO - [44/100] Depth 1: https://news.ycombinator.com/item?id=46866544
+2026-02-03 20:33:41,675 - INFO - ✓ Downloaded: https://news.ycombinator.com/item?id=46866544 -> docs/43.html (173473 bytes)
+2026-02-03 20:33:41,750 - INFO - [45/100] Depth 1: https://news.ycombinator.com/hide?id=46866544&goto=news
+2026-02-03 20:33:41,750 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46866544&goto=news
+2026-02-03 20:33:41,750 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46866544&goto=news
+2026-02-03 20:33:41,750 - INFO - [45/100] Depth 1: https://news.ycombinator.com/vote?id=46871251&how=up&goto=news
+2026-02-03 20:33:41,750 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46871251&how=up&goto=news
+2026-02-03 20:33:41,750 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46871251&how=up&goto=news
+2026-02-03 20:33:41,751 - INFO - [45/100] Depth 1: https://github.com/RAIL-Suite/RAIL
+2026-02-03 20:33:42,769 - INFO - ✓ Downloaded: https://github.com/RAIL-Suite/RAIL -> docs/44.html (389056 bytes)
+2026-02-03 20:33:42,822 - INFO - [46/100] Depth 1: https://news.ycombinator.com/from?site=github.com/rail-suite
+2026-02-03 20:33:44,542 - INFO - ✓ Downloaded: https://news.ycombinator.com/from?site=github.com/rail-suite -> docs/45.html (3618 bytes)
+2026-02-03 20:33:44,549 - INFO - [47/100] Depth 1: https://news.ycombinator.com/user?id=ddddazed
+2026-02-03 20:33:45,874 - INFO - ✓ Downloaded: https://news.ycombinator.com/user?id=ddddazed -> docs/46.html (2182 bytes)
+2026-02-03 20:33:45,878 - INFO - [48/100] Depth 1: https://news.ycombinator.com/item?id=46871251
+2026-02-03 20:33:47,113 - INFO - ✓ Downloaded: https://news.ycombinator.com/item?id=46871251 -> docs/47.html (6923 bytes)
+2026-02-03 20:33:47,122 - INFO - [49/100] Depth 1: https://news.ycombinator.com/hide?id=46871251&goto=news
+2026-02-03 20:33:47,122 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46871251&goto=news
+2026-02-03 20:33:47,123 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46871251&goto=news
+2026-02-03 20:33:47,123 - INFO - [49/100] Depth 1: https://news.ycombinator.com/vote?id=46871179&how=up&goto=news
+2026-02-03 20:33:47,123 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46871179&how=up&goto=news
+2026-02-03 20:33:47,123 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46871179&how=up&goto=news
+2026-02-03 20:33:47,123 - INFO - [49/100] Depth 1: https://news.ycombinator.com/item?id=46871179
+2026-02-03 20:33:49,560 - INFO - ✓ Downloaded: https://news.ycombinator.com/item?id=46871179 -> docs/48.html (51099 bytes)
+2026-02-03 20:33:49,598 - INFO - [50/100] Depth 1: https://news.ycombinator.com/user?id=blenderob
+2026-02-03 20:33:50,890 - INFO - ✓ Downloaded: https://news.ycombinator.com/user?id=blenderob -> docs/49.html (2098 bytes)
+2026-02-03 20:33:50,905 - INFO - [51/100] Depth 1: https://news.ycombinator.com/hide?id=46871179&goto=news
+2026-02-03 20:33:50,905 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46871179&goto=news
+2026-02-03 20:33:50,905 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46871179&goto=news
+2026-02-03 20:33:50,906 - INFO - [51/100] Depth 1: https://news.ycombinator.com/vote?id=46868479&how=up&goto=news
+2026-02-03 20:33:50,906 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46868479&how=up&goto=news
+2026-02-03 20:33:50,906 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46868479&how=up&goto=news
+2026-02-03 20:33:50,906 - INFO - [51/100] Depth 1: https://safe-now.live
+2026-02-03 20:33:50,906 - INFO - Fetching robots.txt for https://safe-now.live
+2026-02-03 20:33:52,704 - INFO - Successfully loaded robots.txt for https://safe-now.live
+2026-02-03 20:33:53,758 - INFO - ✓ Downloaded: https://safe-now.live -> docs/50.html (7948 bytes)
+2026-02-03 20:33:53,774 - INFO - [52/100] Depth 1: https://news.ycombinator.com/from?site=safe-now.live
+2026-02-03 20:33:55,602 - INFO - ✓ Downloaded: https://news.ycombinator.com/from?site=safe-now.live -> docs/51.html (3519 bytes)
+2026-02-03 20:33:55,611 - INFO - [53/100] Depth 1: https://news.ycombinator.com/user?id=tinuviel
+2026-02-03 20:33:57,034 - INFO - ✓ Downloaded: https://news.ycombinator.com/user?id=tinuviel -> docs/52.html (2067 bytes)
+2026-02-03 20:33:57,041 - INFO - [54/100] Depth 1: https://news.ycombinator.com/item?id=46868479
+2026-02-03 20:33:59,290 - INFO - ✓ Downloaded: https://news.ycombinator.com/item?id=46868479 -> docs/53.html (43683 bytes)
+2026-02-03 20:33:59,330 - INFO - [55/100] Depth 1: https://news.ycombinator.com/hide?id=46868479&goto=news
+2026-02-03 20:33:59,330 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46868479&goto=news
+2026-02-03 20:33:59,330 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46868479&goto=news
+2026-02-03 20:33:59,330 - INFO - [55/100] Depth 1: https://news.ycombinator.com/vote?id=46870917&how=up&goto=news
+2026-02-03 20:33:59,330 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46870917&how=up&goto=news
+2026-02-03 20:33:59,330 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46870917&how=up&goto=news
+2026-02-03 20:33:59,330 - INFO - [55/100] Depth 1: https://github.com/oug-t/difi
+2026-02-03 20:34:00,626 - INFO - ✓ Downloaded: https://github.com/oug-t/difi -> docs/54.html (286229 bytes)
+2026-02-03 20:34:00,673 - INFO - [56/100] Depth 1: https://news.ycombinator.com/from?site=github.com/oug-t
+2026-02-03 20:34:02,461 - INFO - ✓ Downloaded: https://news.ycombinator.com/from?site=github.com/oug-t -> docs/55.html (6173 bytes)
+2026-02-03 20:34:02,471 - INFO - [57/100] Depth 1: https://news.ycombinator.com/user?id=oug-t
+2026-02-03 20:34:03,793 - INFO - ✓ Downloaded: https://news.ycombinator.com/user?id=oug-t -> docs/56.html (2212 bytes)
+2026-02-03 20:34:03,808 - INFO - [58/100] Depth 1: https://news.ycombinator.com/item?id=46870917
+2026-02-03 20:34:05,532 - INFO - ✓ Downloaded: https://news.ycombinator.com/item?id=46870917 -> docs/57.html (8767 bytes)
+2026-02-03 20:34:05,546 - INFO - [59/100] Depth 1: https://news.ycombinator.com/hide?id=46870917&goto=news
+2026-02-03 20:34:05,546 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46870917&goto=news
+2026-02-03 20:34:05,546 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46870917&goto=news
+2026-02-03 20:34:05,546 - INFO - [59/100] Depth 1: https://news.ycombinator.com/vote?id=46845650&how=up&goto=news
+2026-02-03 20:34:05,546 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46845650&how=up&goto=news
+2026-02-03 20:34:05,546 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46845650&how=up&goto=news
+2026-02-03 20:34:05,546 - INFO - [59/100] Depth 1: https://www.science.org/doi/10.1126/science.adz1187
+2026-02-03 20:34:05,546 - INFO - Fetching robots.txt for https://www.science.org
+2026-02-03 20:34:08,194 - INFO - Successfully loaded robots.txt for https://www.science.org
+2026-02-03 20:34:08,324 - WARNING - Error downloading https://www.science.org/doi/10.1126/science.adz1187: 403 Client Error: Forbidden for url: https://www.science.org/doi/10.1126/science.adz1187
+2026-02-03 20:34:08,326 - INFO - [59/100] Depth 1: https://news.ycombinator.com/from?site=science.org
+2026-02-03 20:34:10,238 - INFO - ✓ Downloaded: https://news.ycombinator.com/from?site=science.org -> docs/58.html (40844 bytes)
+2026-02-03 20:34:10,256 - INFO - [60/100] Depth 1: https://news.ycombinator.com/user?id=XzetaU8
+2026-02-03 20:34:12,394 - INFO - ✓ Downloaded: https://news.ycombinator.com/user?id=XzetaU8 -> docs/59.html (2056 bytes)
+2026-02-03 20:34:12,401 - INFO - [61/100] Depth 1: https://news.ycombinator.com/item?id=46845650
+2026-02-03 20:34:13,823 - INFO - ✓ Downloaded: https://news.ycombinator.com/item?id=46845650 -> docs/60.html (4142 bytes)
+2026-02-03 20:34:13,835 - INFO - [62/100] Depth 1: https://news.ycombinator.com/hide?id=46845650&goto=news
+2026-02-03 20:34:13,835 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46845650&goto=news
+2026-02-03 20:34:13,835 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46845650&goto=news
+2026-02-03 20:34:13,835 - INFO - [62/100] Depth 1: https://news.ycombinator.com/vote?id=46859054&how=up&goto=news
+2026-02-03 20:34:13,836 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46859054&how=up&goto=news
+2026-02-03 20:34:13,836 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46859054&how=up&goto=news
+2026-02-03 20:34:13,836 - INFO - [62/100] Depth 1: https://openai.com/index/introducing-the-codex-app
+2026-02-03 20:34:13,836 - INFO - Fetching robots.txt for https://openai.com
+2026-02-03 20:34:14,364 - INFO - Successfully loaded robots.txt for https://openai.com
+2026-02-03 20:34:14,364 - INFO - Blocked by robots.txt: https://openai.com/index/introducing-the-codex-app
+2026-02-03 20:34:14,364 - INFO - Blocked by robots.txt: https://openai.com/index/introducing-the-codex-app
+2026-02-03 20:34:14,365 - INFO - [62/100] Depth 1: https://news.ycombinator.com/from?site=openai.com
+2026-02-03 20:34:16,387 - INFO - ✓ Downloaded: https://news.ycombinator.com/from?site=openai.com -> docs/61.html (38626 bytes)
+2026-02-03 20:34:16,417 - INFO - [63/100] Depth 1: https://news.ycombinator.com/user?id=meetpateltech
+2026-02-03 20:34:17,918 - INFO - ✓ Downloaded: https://news.ycombinator.com/user?id=meetpateltech -> docs/62.html (2135 bytes)
+2026-02-03 20:34:17,925 - INFO - [64/100] Depth 1: https://news.ycombinator.com/item?id=46859054
+2026-02-03 20:34:21,315 - INFO - ✓ Downloaded: https://news.ycombinator.com/item?id=46859054 -> docs/63.html (834582 bytes)
+2026-02-03 20:34:21,757 - INFO - [65/100] Depth 1: https://news.ycombinator.com/hide?id=46859054&goto=news
+2026-02-03 20:34:21,757 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46859054&goto=news
+2026-02-03 20:34:21,757 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46859054&goto=news
+2026-02-03 20:34:21,757 - INFO - [65/100] Depth 1: https://www.ycombinator.com/companies/emerge-career/jobs/omqT34S-founding-product-designer
+2026-02-03 20:34:21,757 - INFO - Fetching robots.txt for https://www.ycombinator.com
+2026-02-03 20:34:23,247 - INFO - Successfully loaded robots.txt for https://www.ycombinator.com
+2026-02-03 20:34:23,870 - INFO - ✓ Downloaded: https://www.ycombinator.com/companies/emerge-career/jobs/omqT34S-founding-product-designer -> docs/64.html (199773 bytes)
+2026-02-03 20:34:23,899 - INFO - [66/100] Depth 1: https://news.ycombinator.com/from?site=ycombinator.com
+2026-02-03 20:34:26,110 - INFO - ✓ Downloaded: https://news.ycombinator.com/from?site=ycombinator.com -> docs/65.html (38400 bytes)
+2026-02-03 20:34:26,136 - INFO - [67/100] Depth 1: https://news.ycombinator.com/item?id=46869901
+2026-02-03 20:34:27,562 - INFO - ✓ Downloaded: https://news.ycombinator.com/item?id=46869901 -> docs/66.html (3151 bytes)
+2026-02-03 20:34:27,566 - INFO - [68/100] Depth 1: https://news.ycombinator.com/hide?id=46869901&goto=news
+2026-02-03 20:34:27,566 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46869901&goto=news
+2026-02-03 20:34:27,566 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46869901&goto=news
+2026-02-03 20:34:27,566 - INFO - [68/100] Depth 1: https://news.ycombinator.com/vote?id=46861313&how=up&goto=news
+2026-02-03 20:34:27,566 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46861313&how=up&goto=news
+2026-02-03 20:34:27,566 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46861313&how=up&goto=news
+2026-02-03 20:34:27,566 - INFO - [68/100] Depth 1: https://forums.ankiweb.net/t/ankis-growing-up/68610
+2026-02-03 20:34:27,566 - INFO - Fetching robots.txt for https://forums.ankiweb.net
+2026-02-03 20:34:28,567 - INFO - Successfully loaded robots.txt for https://forums.ankiweb.net
+2026-02-03 20:34:30,415 - INFO - ✓ Downloaded: https://forums.ankiweb.net/t/ankis-growing-up/68610 -> docs/67.html (318021 bytes)
+2026-02-03 20:34:30,446 - INFO - [69/100] Depth 1: https://news.ycombinator.com/from?site=ankiweb.net
+2026-02-03 20:34:32,259 - INFO - ✓ Downloaded: https://news.ycombinator.com/from?site=ankiweb.net -> docs/68.html (16507 bytes)
+2026-02-03 20:34:32,279 - INFO - [70/100] Depth 1: https://news.ycombinator.com/user?id=trms
+2026-02-03 20:34:33,698 - INFO - ✓ Downloaded: https://news.ycombinator.com/user?id=trms -> docs/69.html (2068 bytes)
+2026-02-03 20:34:33,703 - INFO - [71/100] Depth 1: https://news.ycombinator.com/item?id=46861313
+2026-02-03 20:34:35,642 - INFO - ✓ Downloaded: https://news.ycombinator.com/item?id=46861313 -> docs/70.html (310026 bytes)
+2026-02-03 20:34:35,775 - INFO - [72/100] Depth 1: https://news.ycombinator.com/hide?id=46861313&goto=news
+2026-02-03 20:34:35,775 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46861313&goto=news
+2026-02-03 20:34:35,775 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46861313&goto=news
+2026-02-03 20:34:35,775 - INFO - [72/100] Depth 1: https://news.ycombinator.com/vote?id=46865275&how=up&goto=news
+2026-02-03 20:34:35,775 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46865275&how=up&goto=news
+2026-02-03 20:34:35,776 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46865275&how=up&goto=news
+2026-02-03 20:34:35,776 - INFO - [72/100] Depth 1: https://attheu.utah.edu/health-medicine/banning-lead-in-gas-worked-the-proof-is-in-our-hair
+2026-02-03 20:34:35,776 - INFO - Fetching robots.txt for https://attheu.utah.edu
+2026-02-03 20:34:38,504 - INFO - Successfully loaded robots.txt for https://attheu.utah.edu
+2026-02-03 20:34:43,627 - INFO - ✓ Downloaded: https://attheu.utah.edu/health-medicine/banning-lead-in-gas-worked-the-proof-is-in-our-hair -> docs/71.html (70501 bytes)
+2026-02-03 20:34:43,658 - INFO - [73/100] Depth 1: https://news.ycombinator.com/from?site=utah.edu
+2026-02-03 20:34:45,469 - INFO - ✓ Downloaded: https://news.ycombinator.com/from?site=utah.edu -> docs/72.html (39572 bytes)
+2026-02-03 20:34:45,492 - INFO - [74/100] Depth 1: https://news.ycombinator.com/user?id=geox
+2026-02-03 20:34:47,312 - INFO - ✓ Downloaded: https://news.ycombinator.com/user?id=geox -> docs/73.html (2029 bytes)
+2026-02-03 20:34:47,318 - INFO - [75/100] Depth 1: https://news.ycombinator.com/item?id=46865275
+2026-02-03 20:34:48,850 - INFO - ✓ Downloaded: https://news.ycombinator.com/item?id=46865275 -> docs/74.html (80151 bytes)
+2026-02-03 20:34:48,910 - INFO - [76/100] Depth 1: https://news.ycombinator.com/hide?id=46865275&goto=news
+2026-02-03 20:34:48,910 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46865275&goto=news
+2026-02-03 20:34:48,910 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46865275&goto=news
+2026-02-03 20:34:48,910 - INFO - [76/100] Depth 1: https://news.ycombinator.com/vote?id=46868318&how=up&goto=news
+2026-02-03 20:34:48,910 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46868318&how=up&goto=news
+2026-02-03 20:34:48,910 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46868318&how=up&goto=news
+2026-02-03 20:34:48,910 - INFO - [76/100] Depth 1: https://github.com/KrystianJonca/lnai
+2026-02-03 20:34:50,191 - INFO - ✓ Downloaded: https://github.com/KrystianJonca/lnai -> docs/75.html (293979 bytes)
+2026-02-03 20:34:50,252 - INFO - [77/100] Depth 1: https://news.ycombinator.com/from?site=github.com/krystianjonca
+2026-02-03 20:34:57,239 - INFO - ✓ Downloaded: https://news.ycombinator.com/from?site=github.com/krystianjonca -> docs/76.html (3648 bytes)
+2026-02-03 20:34:57,250 - INFO - [78/100] Depth 1: https://news.ycombinator.com/user?id=iamkrystian17
+2026-02-03 20:34:58,678 - INFO - ✓ Downloaded: https://news.ycombinator.com/user?id=iamkrystian17 -> docs/77.html (2251 bytes)
+2026-02-03 20:34:58,686 - INFO - [79/100] Depth 1: https://news.ycombinator.com/item?id=46868318
+2026-02-03 20:35:00,318 - INFO - ✓ Downloaded: https://news.ycombinator.com/item?id=46868318 -> docs/78.html (40673 bytes)
+2026-02-03 20:35:00,340 - INFO - [80/100] Depth 1: https://news.ycombinator.com/hide?id=46868318&goto=news
+2026-02-03 20:35:00,340 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46868318&goto=news
+2026-02-03 20:35:00,340 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46868318&goto=news
+2026-02-03 20:35:00,340 - INFO - [80/100] Depth 1: https://news.ycombinator.com/vote?id=46858577&how=up&goto=news
+2026-02-03 20:35:00,340 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46858577&how=up&goto=news
+2026-02-03 20:35:00,340 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46858577&how=up&goto=news
+2026-02-03 20:35:00,340 - INFO - [80/100] Depth 1: https://www.millert.dev/
+2026-02-03 20:35:00,340 - INFO - Fetching robots.txt for https://www.millert.dev
+2026-02-03 20:35:05,844 - INFO - Successfully loaded robots.txt for https://www.millert.dev
+2026-02-03 20:35:07,180 - INFO - ✓ Downloaded: https://www.millert.dev/ -> docs/79.html (48426 bytes)
+2026-02-03 20:35:07,200 - INFO - [81/100] Depth 1: https://news.ycombinator.com/from?site=millert.dev
+2026-02-03 20:35:09,021 - INFO - ✓ Downloaded: https://news.ycombinator.com/from?site=millert.dev -> docs/80.html (3476 bytes)
+2026-02-03 20:35:09,031 - INFO - [82/100] Depth 1: https://news.ycombinator.com/user?id=wodniok
+2026-02-03 20:35:10,454 - INFO - ✓ Downloaded: https://news.ycombinator.com/user?id=wodniok -> docs/81.html (2059 bytes)
+2026-02-03 20:35:10,460 - INFO - [83/100] Depth 1: https://news.ycombinator.com/item?id=46858577
+2026-02-03 20:35:12,810 - INFO - ✓ Downloaded: https://news.ycombinator.com/item?id=46858577 -> docs/82.html (409166 bytes)
+2026-02-03 20:35:12,983 - INFO - [84/100] Depth 1: https://news.ycombinator.com/hide?id=46858577&goto=news
+2026-02-03 20:35:12,983 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46858577&goto=news
+2026-02-03 20:35:12,983 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46858577&goto=news
+2026-02-03 20:35:12,983 - INFO - [84/100] Depth 1: https://news.ycombinator.com/vote?id=46864498&how=up&goto=news
+2026-02-03 20:35:12,983 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46864498&how=up&goto=news
+2026-02-03 20:35:12,983 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46864498&how=up&goto=news
+2026-02-03 20:35:12,983 - INFO - [84/100] Depth 1: https://alignment.anthropic.com/2026/hot-mess-of-ai
+2026-02-03 20:35:12,983 - INFO - Fetching robots.txt for https://alignment.anthropic.com
+2026-02-03 20:35:13,055 - INFO - Successfully loaded robots.txt for https://alignment.anthropic.com
+2026-02-03 20:35:13,055 - INFO - Blocked by robots.txt: https://alignment.anthropic.com/2026/hot-mess-of-ai
+2026-02-03 20:35:13,055 - INFO - Blocked by robots.txt: https://alignment.anthropic.com/2026/hot-mess-of-ai
+2026-02-03 20:35:13,055 - INFO - [84/100] Depth 1: https://news.ycombinator.com/from?site=anthropic.com
+2026-02-03 20:35:20,899 - INFO - ✓ Downloaded: https://news.ycombinator.com/from?site=anthropic.com -> docs/83.html (39678 bytes)
+2026-02-03 20:35:20,921 - INFO - [85/100] Depth 1: https://news.ycombinator.com/user?id=salkahfi
+2026-02-03 20:35:22,539 - INFO - ✓ Downloaded: https://news.ycombinator.com/user?id=salkahfi -> docs/84.html (2064 bytes)
+2026-02-03 20:35:22,547 - INFO - [86/100] Depth 1: https://news.ycombinator.com/item?id=46864498
+2026-02-03 20:35:24,792 - INFO - ✓ Downloaded: https://news.ycombinator.com/item?id=46864498 -> docs/85.html (113118 bytes)
+2026-02-03 20:35:24,846 - INFO - [87/100] Depth 1: https://news.ycombinator.com/hide?id=46864498&goto=news
+2026-02-03 20:35:24,846 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46864498&goto=news
+2026-02-03 20:35:24,846 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46864498&goto=news
+2026-02-03 20:35:24,846 - INFO - [87/100] Depth 1: https://news.ycombinator.com/vote?id=46870015&how=up&goto=news
+2026-02-03 20:35:24,846 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46870015&how=up&goto=news
+2026-02-03 20:35:24,846 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46870015&how=up&goto=news
+2026-02-03 20:35:24,846 - INFO - [87/100] Depth 1: https://bunny.net/blog/meet-bunny-database-the-sql-service-that-just-works
+2026-02-03 20:35:24,847 - INFO - Fetching robots.txt for https://bunny.net
+2026-02-03 20:35:31,546 - INFO - Successfully loaded robots.txt for https://bunny.net
+2026-02-03 20:35:36,742 - INFO - ✓ Downloaded: https://bunny.net/blog/meet-bunny-database-the-sql-service-that-just-works -> docs/86.html (768919 bytes)
+2026-02-03 20:35:36,836 - INFO - [88/100] Depth 1: https://news.ycombinator.com/from?site=bunny.net
+2026-02-03 20:35:38,612 - INFO - ✓ Downloaded: https://news.ycombinator.com/from?site=bunny.net -> docs/87.html (39164 bytes)
+2026-02-03 20:35:38,650 - INFO - [89/100] Depth 1: https://news.ycombinator.com/user?id=dabinat
+2026-02-03 20:35:40,047 - INFO - ✓ Downloaded: https://news.ycombinator.com/user?id=dabinat -> docs/88.html (2059 bytes)
+2026-02-03 20:35:40,052 - INFO - [90/100] Depth 1: https://news.ycombinator.com/item?id=46870015
+2026-02-03 20:35:41,378 - INFO - ✓ Downloaded: https://news.ycombinator.com/item?id=46870015 -> docs/89.html (10137 bytes)
+2026-02-03 20:35:41,395 - INFO - [91/100] Depth 1: https://news.ycombinator.com/hide?id=46870015&goto=news
+2026-02-03 20:35:41,395 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46870015&goto=news
+2026-02-03 20:35:41,395 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46870015&goto=news
+2026-02-03 20:35:41,395 - INFO - [91/100] Depth 1: https://news.ycombinator.com/vote?id=46861842&how=up&goto=news
+2026-02-03 20:35:41,395 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46861842&how=up&goto=news
+2026-02-03 20:35:41,396 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46861842&how=up&goto=news
+2026-02-03 20:35:41,396 - INFO - [91/100] Depth 1: https://www.githubstatus.com?todayis=2026-02-02
+2026-02-03 20:35:41,396 - INFO - Fetching robots.txt for https://www.githubstatus.com
+2026-02-03 20:35:42,093 - INFO - Successfully loaded robots.txt for https://www.githubstatus.com
+2026-02-03 20:35:42,609 - INFO - ✓ Downloaded: https://www.githubstatus.com?todayis=2026-02-02 -> docs/90.html (140053 bytes)
+2026-02-03 20:35:42,646 - INFO - [92/100] Depth 1: https://news.ycombinator.com/from?site=githubstatus.com
+2026-02-03 20:35:44,872 - INFO - ✓ Downloaded: https://news.ycombinator.com/from?site=githubstatus.com -> docs/91.html (38646 bytes)
+2026-02-03 20:35:44,909 - INFO - [93/100] Depth 1: https://news.ycombinator.com/user?id=bhouston
+2026-02-03 20:35:46,396 - INFO - ✓ Downloaded: https://news.ycombinator.com/user?id=bhouston -> docs/92.html (2112 bytes)
+2026-02-03 20:35:46,405 - INFO - [94/100] Depth 1: https://news.ycombinator.com/item?id=46861842
+2026-02-03 20:35:48,446 - INFO - ✓ Downloaded: https://news.ycombinator.com/item?id=46861842 -> docs/93.html (128810 bytes)
+2026-02-03 20:35:48,508 - INFO - [95/100] Depth 1: https://news.ycombinator.com/hide?id=46861842&goto=news
+2026-02-03 20:35:48,508 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46861842&goto=news
+2026-02-03 20:35:48,508 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46861842&goto=news
+2026-02-03 20:35:48,508 - INFO - [95/100] Depth 1: https://news.ycombinator.com/vote?id=46829029&how=up&goto=news
+2026-02-03 20:35:48,508 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46829029&how=up&goto=news
+2026-02-03 20:35:48,508 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46829029&how=up&goto=news
+2026-02-03 20:35:48,508 - INFO - [95/100] Depth 1: https://serjaimelannister.github.io/hn-words
+2026-02-03 20:35:48,508 - INFO - Fetching robots.txt for https://serjaimelannister.github.io
+2026-02-03 20:35:48,956 - INFO - Successfully loaded robots.txt for https://serjaimelannister.github.io
+2026-02-03 20:35:49,398 - INFO - ✓ Downloaded: https://serjaimelannister.github.io/hn-words -> docs/94.html (13136 bytes)
+2026-02-03 20:35:49,406 - INFO - [96/100] Depth 1: https://news.ycombinator.com/from?site=serjaimelannister.github.io
+2026-02-03 20:35:50,901 - INFO - ✓ Downloaded: https://news.ycombinator.com/from?site=serjaimelannister.github.io -> docs/95.html (4932 bytes)
+2026-02-03 20:35:50,912 - INFO - [97/100] Depth 1: https://news.ycombinator.com/user?id=Imustaskforhelp
+2026-02-03 20:35:52,434 - INFO - ✓ Downloaded: https://news.ycombinator.com/user?id=Imustaskforhelp -> docs/96.html (2834 bytes)
+2026-02-03 20:35:52,442 - INFO - [98/100] Depth 1: https://news.ycombinator.com/item?id=46829029
+2026-02-03 20:35:54,796 - INFO - ✓ Downloaded: https://news.ycombinator.com/item?id=46829029 -> docs/97.html (258481 bytes)
+2026-02-03 20:35:54,918 - INFO - [99/100] Depth 1: https://news.ycombinator.com/hide?id=46829029&goto=news
+2026-02-03 20:35:54,919 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46829029&goto=news
+2026-02-03 20:35:54,919 - INFO - Blocked by robots.txt: https://news.ycombinator.com/hide?id=46829029&goto=news
+2026-02-03 20:35:54,919 - INFO - [99/100] Depth 1: https://news.ycombinator.com/vote?id=46843805&how=up&goto=news
+2026-02-03 20:35:54,919 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46843805&how=up&goto=news
+2026-02-03 20:35:54,919 - INFO - Blocked by robots.txt: https://news.ycombinator.com/vote?id=46843805&how=up&goto=news
+2026-02-03 20:35:54,919 - INFO - [99/100] Depth 1: https://gyrovague.com/2026/02/01/archive-today-is-directing-a-ddos-attack-against-my-blog
+2026-02-03 20:35:54,919 - INFO - Fetching robots.txt for https://gyrovague.com
+2026-02-03 20:35:56,532 - INFO - Successfully loaded robots.txt for https://gyrovague.com
+2026-02-03 20:35:57,048 - INFO - ✓ Downloaded: https://gyrovague.com/2026/02/01/archive-today-is-directing-a-ddos-attack-against-my-blog -> docs/98.html (136135 bytes)
+2026-02-03 20:35:57,079 - INFO - [100/100] Depth 1: https://news.ycombinator.com/from?site=gyrovague.com
+2026-02-03 20:35:59,207 - INFO - ✓ Downloaded: https://news.ycombinator.com/from?site=gyrovague.com -> docs/99.html (41043 bytes)
+2026-02-03 20:35:59,248 - INFO - ============================================================
+2026-02-03 20:35:59,248 - INFO - Crawl Complete!
+2026-02-03 20:35:59,248 - INFO - ============================================================
+2026-02-03 20:35:59,248 - INFO - Successfully crawled: 100 URLs
+2026-02-03 20:35:59,248 - INFO - Failed: 3 URLs
+2026-02-03 20:35:59,248 - INFO - Blocked by robots.txt: 47 URLs
+2026-02-03 20:35:59,248 - INFO - Total visited: 150 URLs
+2026-02-03 20:35:59,248 - INFO - Documents saved: 100
+2026-02-03 20:35:59,248 - INFO - Time elapsed: 223.66s
+2026-02-03 20:35:59,248 - INFO - Average time per URL: 2.24s
+2026-02-03 20:35:59,248 - INFO - Saved to: docs
+2026-02-03 20:35:59,248 - INFO - ============================================================
+2026-02-03 20:35:59,248 - INFO - 
+Crawl statistics: {'crawled': 100, 'failed': 3, 'blocked': 47, 'total_visited': 150, 'elapsed_time': 223.6630575656891, 'avg_time_per_url': 2.236630575656891}

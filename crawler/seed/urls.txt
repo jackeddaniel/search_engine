@@ -1,20 +1,48 @@
-https://en.wikipedia.org/wiki/Manchester_United_F.C.
-https://en.wikipedia.org/wiki/Manchester_City_F.C.
-https://en.wikipedia.org/wiki/Liverpool_F.C.
-https://en.wikipedia.org/wiki/Kubernetes
-https://en.wikipedia.org/wiki/AWS
-https://en.wikipedia.org/wiki/Whatsapp
-https://en.wikipedia.org/wiki/Flipkart
-https://en.wikipedia.org/wiki/Netflix
-https://en.wikipedia.org/wiki/Meesho
-https://en.wikipedia.org/wiki/Warren_Buffett
-https://en.wikipedia.org/wiki/Benjamin_Franklin
-https://en.wikipedia.org/wiki/Abraham_Lincoln
-https://en.wikipedia.org/wiki/Isaac_Newton
-https://en.wikipedia.org/wiki/Albert_Einstein
-https://en.wikipedia.org/wiki/Central_Intelligence_Agency
-https://en.wikipedia.org/wiki/Buckingham_Palace
-https://en.wikipedia.org/wiki/Brexit
-https://en.wikipedia.org/wiki/Mukesh_Ambani
-https://en.wikipedia.org/wiki/George_Orwell
-https://en.wikipedia.org/wiki/Steve_Jobs
+# Seed URLs for General Search Engine
+# These are diverse, crawler-friendly sites for building a search engine index
+
+# News & Media (usually allow crawling)
+https://news.ycombinator.com/
+https://www.bbc.com/news
+https://www.reuters.com/
+https://www.theguardian.com/
+
+# Technology & Documentation (crawler-friendly)
+https://stackoverflow.com/
+https://github.com/trending
+https://dev.to/
+https://medium.com/
+
+# Blogs (usually crawler-friendly)
+https://blog.google/
+https://engineering.fb.com/
+https://aws.amazon.com/blogs/
+https://blog.cloudflare.com/
+
+# Educational (many allow crawling)
+https://www.khanacademy.org/
+https://ocw.mit.edu/
+https://www.coursera.org/
+https://www.edx.org/
+
+# Reference & Documentation
+https://developer.mozilla.org/
+https://docs.python.org/
+https://docs.docker.com/
+https://kubernetes.io/docs/
+
+# E-commerce (check robots.txt first)
+https://www.ebay.com/
+https://www.etsy.com/
+
+# Government & Public Data (usually open)
+https://www.usa.gov/
+https://data.gov/
+https://www.census.gov/
+
+# Academic & Research
+https://arxiv.org/
+https://scholar.google.com/
+
+# NOTE: Always check each site's robots.txt before crawling
+# Run this to check: curl https://example.com/robots.txt
